@@ -50,12 +50,17 @@ The encoder-only classifier (EncCla) outputs a class label for each hit in an ev
 
 ### Usage
 Running training:
+```sh
+python ./src/train.py ./configs/example_training.toml
 ```
-python train.py <path_to_toml_file>
+Restarting a training:
+```sh
+python ./src/train.py ./configs/example_restart_training.toml
 ```
+
 Running evaluation:
-```
-python evaluate.py <path_to_toml_file>
+```sh
+python ./src/evaluate.py ./configs/example_evaluation.toml
 ```
 
 ## EncDec
