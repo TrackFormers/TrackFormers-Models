@@ -2,7 +2,7 @@
 
 TrackFormers is a machine learning framework for track reconstruction in particle physics experiments. It leverages transformer- and U-Net-inspired deep learning architectures to predict particle tracks from hit data.
 
-This repository contains 4 submodules corresponding to the 4 models described in the paper [TrackFormers: In Search of Transformer-Based Particle Tracking for the High-Luminosity LHC Era](https://arxiv.org/abs/2407.07179). EncDec, EncCla, and EncReg are transformer-based models, whereas U-Net is, as the name suggests, a U-Net model.
+This repository contains 4 directories corresponding to the 4 models described in the paper [TrackFormers: In Search of Transformer-Based Particle Tracking for the High-Luminosity LHC Era](https://arxiv.org/abs/2407.07179). EncDec, EncCla, and EncReg are transformer-based models, whereas U-Net is, as the name suggests, a U-Net model.
 
 ## Table of Contents
 - [Models](#models)
@@ -18,9 +18,9 @@ This repository contains 4 submodules corresponding to the 4 models described in
 - [U-Net](#U-Net)
 
 ## EncReg
-This submodule contains the implementation of the Transformer Regressor (EncReg): an encoder-only model for track finding. It is a sequence-to-sequence model, taking a sequence of hits from a single event as input, and producing a sequence of track parameters: one per hit, characterizing the track of the particle that generated each hit. In a secondary step, a clustering algorithm is used to group hits belonging to the same particle together (HDBSCAN).
+This directory contains the implementation of the Transformer Regressor (EncReg): an encoder-only model for track finding. It is a sequence-to-sequence model, taking a sequence of hits from a single event as input, and producing a sequence of track parameters: one per hit, characterizing the track of the particle that generated each hit. In a secondary step, a clustering algorithm is used to group hits belonging to the same particle together (HDBSCAN).
 
-The submodule implements the whole pipeline, from data loading, to training, to evaluation. The scoring of the model is done using the TrackML score, which is taken from the trackML github page (https://github.com/LAL/trackml-library/tree/master), and three efficiency metrics defined in the GNN Tracking project (https://github.com/gnn-tracking/gnn_tracking/tree/main).
+The codebase implements the whole pipeline, from data loading, to training, to evaluation. The scoring of the model is done using the TrackML score, which is taken from the trackML github page (https://github.com/LAL/trackml-library/tree/master), and three efficiency metrics defined in the GNN Tracking project (https://github.com/gnn-tracking/gnn_tracking/tree/main).
 
 ### Dependencies
 The code runs on Python==3.9.7 and uses torch==2.1.2.
@@ -142,13 +142,6 @@ Other minor packages such as *h5py* are used. For further research about the com
 ```sh
 git clone git@github.com:TrackFormers/TrackFormers-Models.git
 ```
-
-## Clone a single submodule
-- Copy the submodule's URL from the .gitmodules file or GitHub
-- Clone the submodule using its URL:
-  ```sh
-  git clone https://github.com/Submodule_URL.git
-  ```
 
 ## Citation
 If you use this codebase in your research or publication, we kindly request you to 
