@@ -6,7 +6,7 @@ This repository contains 4 submodules corresponding to the 4 models described in
 
 ## Table of Contents
 - [Models](#models)
-- [Usage](#usage)
+- [Getting started](#getting-started)
 - [Citation](#citation)
 - [Authors](#authors)
 - [Licence](#licence)
@@ -132,7 +132,7 @@ The entire code is written using PyTorch and fully tested with Python 3.8.10. Ma
 Other minor packages such as *h5py* are used. For further research about the compatibilities between different versions of Python and PyTorch for the *spconv* package, the reader is addressed to their own repository [here](https://github.com/traveller59/spconv).
 
 
-## Usage
+## Getting started
 ### Clone the whole respository
 ```sh
 git clone git@github.com:TrackFormers/TrackFormers-Models.git
