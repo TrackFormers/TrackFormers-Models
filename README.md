@@ -68,10 +68,9 @@ The encoder-decoder model (EncDec) takes initial hits of a track as input, condi
 
 ### Installation
 
-1. Clone the repository:
+1. After cloning the repository:
     ```sh
-    git clone <repo_here>
-    cd trackformers
+    cd EncDec
     ```
 
 2. Set up the environment:
