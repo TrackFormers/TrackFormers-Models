@@ -134,6 +134,9 @@ Other minor packages such as *h5py* are used. For further research about the com
 
 ## Usage
 ### Clone the whole respository
+```sh
+git clone git@github.com:TrackFormers/TrackFormers-Models.git
+```
 
 ## Clone a single submodule
 - Copy the submodule's URL from the .gitmodules file or GitHub
