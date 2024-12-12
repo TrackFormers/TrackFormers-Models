@@ -39,7 +39,7 @@ The `refiner\` folder contains the implementation of a refiner network (training
 The trained models for which best scores are reported in the paper, are included in the `models\` folder.
 
 ### Using the Code Base
-To train a model, simply run the `training.py` file and provide it with the command line arguments it expects: `max_nr_hits, nr_epochs, data_path, model_name, nr_enc_layers, embedding_size, hidden_dim, data_type, dropout, early_stop`. Some have a set default value that can be see in the `training.py.` file. Alernatively, you can run the `training_flash.py` file, which expects the same arguments, but also makes use of Flash Attention instead of the default Multi-Head Attention.
+To train a model, simply run the `training.py` file and provide it with the command line arguments it expects: `max_nr_hits, nr_epochs, data_path, model_name, nr_enc_layers, embedding_size, hidden_dim, data_type, dropout, early_stop`. Some have a set default value that can be see in the `training.py.` file. Alternatively, you can run the `training_flash.py` file, which expects the same arguments, but also makes use of Flash Attention instead of the default Multi-Head Attention.
 
 To evaluate a model using the TrackML score, simply run the `test.py` file from the `evaluation\` directory and provide it with the command line arguments it expects: `max_nr_hits, data_path, model_name, nr_enc_layers, embedding_size, hidden_dim, data_type, dropout`. Alternatively, to also obtain the three additional efficiency metrics and the timing information (CPU and GPU time) of running the model, run the `performance_stats.py` file from the same directory. It expects the same arguments.
 
