@@ -51,16 +51,16 @@ The encoder-only classifier (EncCla) outputs a class label for each hit in an ev
 ### Usage
 Running training:
 ```sh
-python ./src/train.py ./configs/example_training.toml
+python EncCla/src/train.py EncCla/configs/example_training.toml
 ```
 Restarting a training:
 ```sh
-python ./src/train.py ./configs/example_restart_training.toml
+python EncCla/src/train.py EncCla/configs/example_restart_training.toml
 ```
 
 Running evaluation:
 ```sh
-python ./src/evaluate.py ./configs/example_evaluation.toml
+python EncCla/src/evaluate.py EncCla/configs/example_evaluation.toml
 ```
 
 ## EncDec
