@@ -28,7 +28,7 @@ The code runs on Python==3.9.7 and uses torch==2.1.2.
 Other libraries used are as follows: numpy, pandas, matplotlib, hdbscan.
 
 ### Contents
-The Transformer Regressor architecture is implemented in `model.py`, and the Flash attention and custom encoder layer using it are implemented in `custom_encoder.py`. The `training.py` file contains the training functionality when exact attention is used, while `training_flash.py` contains training funcitonality with Flash attention enabled. 
+The Transformer Regressor architecture is implemented in `model.py`, and the Flash attention and custom encoder layer using it are implemented in `custom_encoder.py`. The `training.py` file contains the training functionality when exact attention is used, while `training_flash.py` contains training functionality with Flash attention enabled. 
 
 The `evaluation\` directory contains functionality used at inference time: `test.py` for obtaining scores and heatmaps; `performance_stats.py` for obtaining MSE, CUDA and CPU time, standard deviation; `plotting.py` for the creation of the heatmaps; `scoring.py` for the TrackML and efficiency calculations.
 
@@ -39,9 +39,9 @@ The `refiner\` folder contains the implementation of a refiner network (training
 The trained models for which best scores are reported in the paper, are included in the `models\` folder.
 
 ### Using the Code Base
-To train a model, simply run the `training.py` file and provide it with the commandline arguments it expects: `max_nr_hits, nr_epochs, data_path, model_name, nr_enc_layers, embedding_size, hidden_dim, data_type, dropout, early_stop`. Some have a set default value that can be see in the `training.py.` file. Alernatively, you can run the `training_flash.py` file, which expects the same arguments, but also makes use of Flash Attention instead of the default Multi-Head Attention.
+To train a model, simply run the `training.py` file and provide it with the command line arguments it expects: `max_nr_hits, nr_epochs, data_path, model_name, nr_enc_layers, embedding_size, hidden_dim, data_type, dropout, early_stop`. Some have a set default value that can be see in the `training.py.` file. Alernatively, you can run the `training_flash.py` file, which expects the same arguments, but also makes use of Flash Attention instead of the default Multi-Head Attention.
 
-To evaluate a model using the TrackML score, simply run the `test.py` file from the `evaluation\` directory and provide it with the commandline arguments it expects: `max_nr_hits, data_path, model_name, nr_enc_layers, embedding_size, hidden_dim, data_type, dropout`. Alternativelly, to also obtain the three additional efficiency metrics and the timing information (CPU and GPU time) of running the model, run the `performance_stats.py` file from the same directory. It expects the same arguments.
+To evaluate a model using the TrackML score, simply run the `test.py` file from the `evaluation\` directory and provide it with the command line arguments it expects: `max_nr_hits, data_path, model_name, nr_enc_layers, embedding_size, hidden_dim, data_type, dropout`. Alternatively, to also obtain the three additional efficiency metrics and the timing information (CPU and GPU time) of running the model, run the `performance_stats.py` file from the same directory. It expects the same arguments.
 
 Example usage can be found in `script_train.sh` and `evaluation\script_test.sh`.
 
