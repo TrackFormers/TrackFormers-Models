@@ -1,0 +1,13 @@
+{
+    "method": "random",
+    "parameters": {
+        "batch_size": {"values": [32, 64, 128]},
+        "learning_rate": {"values": [0.1, 0.01, 0.001, 0.0001, 0.00001]},
+        "optimizer": {"values": ["Adam"]},
+        "embed_dim": {"values": [64, 128, 256, 512]},
+        "dense_dim": {"values": [512, 1024, 2048]},
+        "num_heads": {"values": [2, 4, 8, 12]},
+        "num_stacks": {"values": [1, 2, 3, 6]},
+        "epochs": {"values": [10, 30, 50, 70]}
+    }
+}
