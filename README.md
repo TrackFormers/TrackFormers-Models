@@ -161,10 +161,10 @@ cite the following paper:
 
 ## Authors
 The codebase is created by:
-- EncDec: _Nadezhda Dobreva_ - Radboud University, the Netherlands
-- EncCla: _Yue Zhao_ - SURF, the Netherlands
-- EncReg: _Zef Wolffs_ - University of Amsterdam; Nikhef, the Netherlands
-- U-Net: _Antonio Ferrer Sánchez_ - University of Valencia, Spain
+- EncDec: [_Nadezhda Dobreva_](https://github.com/nadiand) - Radboud University, the Netherlands
+- EncCla: [_Yue Zhao_](https://github.com/yuezhao6371) - SURF, the Netherlands
+- EncReg: [_Zef Wolffs_](https://github.com/Zeff020) - University of Amsterdam; Nikhef, the Netherlands
+- U-Net: [_Antonio Ferrer Sánchez_](https://github.com/Netzuel) - University of Valencia, Spain
 
 The collaborating team of the paper includes:
 - _Sascha Caron_ - Radboud University; Nikhef, the Netherlands
